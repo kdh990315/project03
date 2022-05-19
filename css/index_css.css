@@ -29,7 +29,7 @@ header {
 
 #header_wrap {
     overflow: hidden;
-    position: relative;
+    position: absolute;
     width: 94vw;
     display: flex;
     justify-content: space-between;
@@ -37,6 +37,7 @@ header {
     align-items: center;
     z-index: 1000;
     left: 3%;
+    top: 1%;
 }
 
 #header_wrap nav {
@@ -94,7 +95,7 @@ header {
     height: 85vh;
     position: relative;
     z-index: 1;
-    top: 1%;
+    top: 13%;
     left: 3%;
     border-radius: 20px;
 }
