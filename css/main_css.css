@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+/* 헤더 시작 */
+header {
+    width: 100%;
+    top: 0;
+}
+
+#header_wrap {
+    overflow: hidden;
+    position: relative;
+    width: 94vw;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    left: 3%;
+}
+
+#header_wrap nav {
+    color: #eee;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+#header_wrap nav ul {
+    display: flex;
+    align-items: center;
+}
+
+#header_wrap nav ul li {
+    float: left;
+    color: black;
+    margin: 0 30px;
+}
+
+#header_wrap nav ul li a {
+    display: inline-block;
+    color: black
+}
+
+#header_wrap nav ul li a:hover {
+    opacity: 0.5;
+}
+
+.header_icomBox a img {
+    width: 35px;
+    margin: 0 5px;
+}
+
+/* 헤더 끝 */
+
+#fullpage {position:relative;top:0px;z-index:9;width:100%;height:100%;}
+
+.fullsection{width:100%;height:100%;position:relative;}
+
+.quick {position:fixed;right:20px;top:50%;transform:translateY(-50%); z-index:100000}
+.quick li {width:10px;height:10px;margin-bottom:10px; border-radius:15px;border:2px solid #fff;cursor:pointer;}
+.quick .on {background:#fff;}
+
+/*  slider1  */
+.silder1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    background-color: rebeccapurple;
+}
+
+.bg{
+    width: 94vw;
+    height: 85vh;
+    position: relative;
+    z-index: 1;
+    top: 1%;
+    left: 3%;
+    border-radius: 20px;
+}
+
+.silder2{background:yellow;     width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;}
+.silder3{background:green;}
+.silder4{background:blue;}
+.silder5{background:purple;}
+
+.go_top {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    background-color: #333;
+    color: #fff;
+    right: 50px;
+    bottom: 50px;
+    z-index: 10000;
+    text-align: center;
+    display: none;
+}
+
+.go_top i{
+    font-size: 30px;
+    margin-top: 5px;
+}
