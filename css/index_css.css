@@ -88,6 +88,22 @@ header {
     position: relative;
     z-index: 0;
 }
+
+.page1_text_box{
+    width: 100%;
+    height: 14.4vh;
+    text-align: center;
+}
+
+.page1_txt {
+    font-size: 56px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+
 /* 페이지 공동 박스 */
 .bg{
     width: 94vw;
@@ -122,6 +138,31 @@ header {
     background-color: bisque;
     position: absolute;
     top: 31%;
+    text-align: center;
+}
+
+.page2_text_box h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.page2_txt {
+    font-size: 56px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    margin: 23px 0;
+    line-height: 51px;
+}
+
+.page2_text_box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page2_text_box span {
+    margin-top: 30px;
 }
 
 .page2_right_box {
@@ -166,6 +207,22 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    color: honeydew;
+    font-weight: bold;
+}
+
+/* .page3_box_one {
+    background-image: url("img/Electric1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.page3_box_one:hover {
+    background-image: url(img/Electric2.jpg);
+    background-size: cover;
+    transition: 3s ease-in-out;
+    cursor: pointer;
 }
 
 .page3_box_two {
@@ -223,9 +280,115 @@ header {
     left: 3.5%; 
 }
 
-.page5{background:purple;}
-.page6{background:blue;}
-.page7{background:purple;}
+.page5 {
+    background: purple;
+}
+
+.page5_box {
+    width: 77vw;
+    height: 42.7vh;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.page5_box h1 {
+    text-align: center;
+    font-size: 56px;
+    text-transform: uppercase;
+    font-weight: 200;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.page5_txt_box {
+    width: 77vw;
+    height: 21.5vh;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.page5_txt {
+    width: 18.7vw;
+    height: 21.5vh;
+    background-color: darkblue;
+}
+
+.page6 {
+    background: blue;
+}
+
+.page6_video_Box {
+    width: 58.6vw;
+    height: 59.8vh;
+    position: absolute;
+    background-color: rgb(137, 137, 235);
+    top: 50%;
+    left: 32%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+}
+
+.page6_video_txt_box {
+    width: 23.7vw;
+    height: 77.8vh;
+    position: absolute;
+    background-color: darkorange;
+    top: 50%;
+    left: 75.5%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    padding-right: 35vw;
+    padding-left: 14vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page6_video_txt_box span {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.page6_video_txt_box strong {
+    text-transform: uppercase;
+    font-size: 56px;
+
+}
+
+.page7 {
+    background: purple;
+}
+
+.SNS_box {
+    width: 100%;
+    height: 56.7vh;
+    background-color: sienna;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 54%;
+}
+
+.SNS_txt_box {
+    width: 100%;
+    height: 18.8vh;
+    background-color: khaki;
+    text-align: center;
+}
+
+.SNS_txt_box h6{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+.SNS_txt_box strong {
+    font-size: 58px;
+    font-weight: 200;
+    letter-spacing: 16px;
+}
+
 .page8{background:blue;}
 
 .go_top {
