@@ -79,10 +79,10 @@ a {
     font-size: .75em;
 }
 
-    #back-to-top:hover {
-        background-color: #fff;
-        padding: 1em 3em;
-    }
+#back-to-top:hover {
+    background-color: #fff;
+    padding: 1em 3em;
+}
 
 #back-to-top.visible {
     opacity: 1;

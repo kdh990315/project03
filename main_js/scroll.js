@@ -20,7 +20,7 @@ function fullset(){
 			var pagelength=0;
 			for(var i=1; i<(before); i++)
 			{
-				pagelength += $(".full"+i).height();
+				pagelength += $(".page"+i).height();
 			}
 			if(page.index() > 0){ //첫번째 페이지가 아닐때 (index는 0부터 시작임)
 				page=page.index()-1;
@@ -42,7 +42,7 @@ function fullset(){
 				for(var i = 1; i<(nextPage+1); i++){ 
 					//총 페이지 길이 구하기
 					//ex) 현재 1번페이지에서 2번페이지로 내려갈때는 1번페이지 길이 + 2번페이지 길이가 더해짐
-					pagelength += $(".full"+i).height();
+					pagelength += $(".page"+i).height();
 				}
 				$("#fullpage").animate({"top": -pagelength + "px"},1000, "swing");
 			}
@@ -60,7 +60,7 @@ function fullset(){
 		for(var i = 1; i<resizeindex; i++){ 
 			//총 페이지 길이 구하기
 			//ex) 현재 1번페이지에서 2번페이지로 내려갈때는 1번페이지 길이 + 2번페이지 길이가 더해짐
-			pagelength += $(".full"+i).height();
+			pagelength += $(".page"+i).height();
 		}
 
 		$("#fullpage").animate({"top": -pagelength + "px"},0);

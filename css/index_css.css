@@ -29,7 +29,7 @@ header {
 
 #header_wrap {
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     width: 94vw;
     display: flex;
     justify-content: space-between;
@@ -82,14 +82,13 @@ header {
 .quick .on {background:#fff;}
 
 /*  slider1  */
-.silder1 {
+.page1 {
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 0;
-    background-color: rebeccapurple;
 }
-
+/* 페이지 공동 박스 */
 .bg{
     width: 94vw;
     height: 85vh;
@@ -97,16 +96,137 @@ header {
     z-index: 1;
     top: 13%;
     left: 3%;
-    border-radius: 20px;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
-.silder2{background:yellow;     width: 100%;
+.page2 {
+    width: 100%;
     height: 100%;
     position: relative;
-    z-index: 0;}
-.silder3{background:green;}
-.silder4{background:blue;}
-.silder5{background:purple;}
+    z-index: 0;
+}
+
+.page2_left_box {
+    width: 47vw;
+    height: 85vh;
+    background-color: saddlebrown;
+}
+
+.page2_text_box {
+    width: 47vw;
+    height: 35vh;
+    background-color: bisque;
+    position: absolute;
+    top: 31%;
+}
+
+.page2_right_box {
+    width: 47vw;
+    height: 85vh;
+    background-color: aqua;
+}
+
+.page2_btn_box {
+    width: 47vw;
+    height: 10vh;
+    background-color: #313943;
+    opacity: 0.3;
+    position: absolute;
+    bottom: 0;
+}
+
+.prevBtn, .nextBtn {
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    margin: 0 20px;
+    top: 30%;
+    left: 80%;
+}
+
+.page3{
+    background:green;
+}
+
+.page3_box {
+    width: 22vw;
+    height: 30vh;
+    background-color: aqua;
+    border-radius: 10px;
+    position: relative;
+}
+
+.page3_box p{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.page3_box_two {
+    width: 35vw;
+    height: 30vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page3_category {
+    font-size: 18px;
+}
+
+.page3_txt {
+    font-size: 56px;
+    display: block;
+    line-height: 61px;
+    letter-spacing: 3px;
+    padding: 30px 0;
+    font-weight: 200;
+    text-align: center;
+}
+
+.page4{background:blue;}
+
+.page4_left_box {
+    width: 24vw;
+    height: 85vh;
+    background-color: rgb(243, 114, 131);
+}
+
+.page4_Benz {
+    font-size: 18px;
+
+}
+
+.page4_txt span{
+    font-size: 56px;
+}
+
+.page4_more {
+    font-size: 12px;
+}
+
+.page4_right_box {
+    width: 70vw;
+    height: 85vh;
+    background-color: aqua;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    left: 3.5%; 
+}
+
+.page5{background:purple;}
+.page6{background:blue;}
+.page7{background:purple;}
+.page8{background:blue;}
 
 .go_top {
     width: 40px;
@@ -124,4 +244,32 @@ header {
 .go_top i{
     font-size: 30px;
     margin-top: 5px;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    background-color: rgba(255, 255, 255, .9);
+    color: #313943;
+    border: none;
+    border-radius: 5px;
+    padding: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, .25);
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    opacity: 0;
+    text-decoration: none;
+    font-size: .75em;
+}
+
+#back-to-top:hover {
+    background-color: #fff;
+    padding: 1em 3em;
+}
+
+#back-to-top.visible {
+    opacity: 1;
 }
