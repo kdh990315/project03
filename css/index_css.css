@@ -189,57 +189,62 @@ header {
     left: 80%;
 }
 
-.page3{
-    background:green;
-}
-
-.page3_box {
+.page2_box {
     width: 22vw;
-    height: 30vh;
-    background-color: aqua;
+    height: 30vh;   
     border-radius: 10px;
     position: relative;
 }
 
-.page3_box p{
+.page2_box p{
     font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: honeydew;
     font-weight: bold;
 }
 
-/* .page3_box_one {
-    background-image: url("img/Electric1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
-
-.page3_box_one:hover {
-    background-image: url(img/Electric2.jpg);
-    background-size: cover;
-    transition: 3s ease-in-out;
-    cursor: pointer;
+.page2_box::before, .page2_box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 95%;
+    height: 95%;
+    transform: translate(-50%, -50%);
+    transition: all 0.8s;
 }
 
-.page3_box_two {
+.page2_box::before {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 0;
+}
+
+.page2_box::after {
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    height: 0;
+}
+
+.page2_box:hover::before {width: 95%;}
+.page2_box:hover::after {height: 95%;}
+
+.page2_box_two {
     width: 35vw;
     height: 30vh;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.page3_category {
+.page2_category {
     font-size: 18px;
 }
 
-.page3_txt {
+.page2_txt {
     font-size: 56px;
     display: block;
     line-height: 61px;
