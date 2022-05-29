@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>	
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+    	<!-- 스와이퍼슬라이드 CDN -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script src="js/main_slide.js"></script>
+    <script src="js/back-to-top.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/video.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container clearfix">
+            <h1 class="logo">
+                <a href=""></a>
+            </h1>
+            <nav class="clearfix">
+                <ul class="main_menu">
+                    <li><a href="" class="active">Vehicles</a></li>
+                    <li><a href="">Exhibition Center</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+
+                <ul class="icon_box">
+                    <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-globe"></i></a></li>
+                </ul>
+                <span class="toggle"><i class="fa-solid fa-bars"></i></span>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 메인 슬라이더 시작 -->
+
+    <div class="main_container">
+        <ul class="main_slider_container simple_list" id="slider">
+            <li class="slide">
+                <div class="main_img_box">
+                    <img src="img/slideimg1.jpg" alt="">
+                </div>
+            </li>
+            <li class="slide">  
+                <div class="main_img_box">
+                    <img src="img/slideimg2.jpg" alt="">
+                </div>
+            </li>
+            <li class="slide">
+                <div class="main_img_box">
+                    <img src="img/slideimg3.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+        <div class="main_text_box">
+            <p>Leading the way.<br>
+               The Benz.
+            </p>
+            <p>
+                메르세데스-벤츠가 선사하는 <br>
+                혁신적인 편의 기능, 이상적인 공간을 느껴보세요.
+            </p>
+
+            <button class="main_text_btn">
+                프로모션 확인하기
+            </button>
+        </div>
+        <a href="#" id="prev"><i class="fa-solid fa-angle-left"></i></a>
+        <a href="#" id="next"><i class="fa-solid fa-angle-right"></i></a>
+    </div>
+
+    <div class="main_info_box">
+        <div class="main_info_box1">
+            <div class="main_info_box1_img">
+                <a href=""><img src="img/info1.jpg" alt="infoimg"></a>
+            </div>
+            <div class="main_info_box1_text">
+                <h1 class="info_head">메르세데스-벤츠 공식 서비스</h1>
+                <p class="info_text">저희 공식 서비스는 순정 부품과 제조사 매뉴얼을 통한 수리로 <br>
+                     고객님의 벤츠를 위한 최적화 된 서비스를 제공하고 있습니다. <br>
+                    맞춤형 부품과 수리로 안전하고 편안한 주행을 즐겨 보십시오.</p>
+            </div>
+        </div>
+        <div class="main_info_box2">
+            <div class="main_info_box2_left">
+                <div class="info_box2_left_box">
+                    <div class="box2_left_img_box">
+                        <a href=""><img src="img/info3.jpg" alt="infoimg"></a>
+                        <h1 class="info_head1">사고 수리 온라인 견적</h1>
+                        <p class="info_text1">사고 차량을 제대로 수리하는 것이 고객님 가족의 안전과 재산을 <br>
+                            보호하는 길입니다. 벤츠의 전문화된 수리로 예상치 못한 사고도 <br>
+                            도와 드리겠습니다.
+                    </div>
+                </div>
+            </div>
+            <div class="main_info_box2_right">
+                <div class="info_box2_right_box">
+                    <div class="box2_rigth_img_box">
+                        <a href=""><img src="img/info2.jpg" alt="infoimg"></a>
+                        <h1 class="info_head2">My Benz App</h1>
+                        <p class="info_text2">내차 관련한 정보를 한눈에 손쉽게 확인해 보시고,
+                             다양한 혜택도 누려 보시기 바랍니다.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- video -->
+    <div class="video">
+        <div class="video_wrap"></div>
+        <div class="contents">
+            <a class="icon" href="#"><i class="far fa-play-circle"></i></a>
+            <h3 class="content_tt">Mercedes-Benz Video Presentation</h2>
+            <p class="content_desc">Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren ermittelt. Es handelt sich um die „NEFZ-CO₂-Werte“ i. S. v. Art. 2 Nr. 1 Durchführungsverordnung. Die Kraftstoffverbrauchswerte wurden auf Basis dieser Werte errechnet.</p>
+            <span>03:40</span>
+        </div>
+        <div id="overlay">
+            <div class="inner">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/-4zsY28t76k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <a href="" class="close">X</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- item -->
+    <div class="item_box_name">
+        <p>Model Overview</p>
+    </div>
+    <div class="content_item_box">
+        <div class="item_box box1">
+            <a href="">
+                <p>Electric Motor Vehicle</p>
+            </a>
+        </div>
+        <div class="item_box box2">
+            <a href="">
+                <p>Hatchback</p>
+            </a>
+        </div>
+        <div class="item_box box3">
+            <a href="">
+                <p>Sedan</p>
+            </a>
+        </div>
+        <div class="item_box box4">
+            <a href="">
+                <p>SUV</p>
+            </a>
+        </div>
+        <div class="item_box box5">
+            <a href="">
+                <p>Coupé</p>
+            </a>
+        </div>
+        <div class="item_box box6">
+            <a href="">
+                <p>Cabriolet</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- 전시장찾기 시작 -->
+    <div class="test_drive_box" style="background-image: url('../484848/img/rowimg.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="test_drive_text_box">
+            <strong>
+                FIND YOUR NEAREST DEALERSHIP
+            </strong>
+
+            <p>
+                전문적인 상담과 지원 서비스를 위하여 <br>
+                가장 가까운 랜드로버 전시장을 방문해 주십시오.
+            </p>
+
+            <a href=""><i class="fa-solid fa-right-to-bracket"></i>전시장 방문하기.</a>
+        </div>
+    </div>
+
+    <!-- SNS박스 시작 -->
+    <div class="SNS_header_name_box">
+        <h1>stay connected with mercedes-Benz</h1>
+        <p>메르세데스-벤츠의 소셜미디어 컨텐츠를 확인하세요.</p>
+    </div>
+
+    <!-- 스와이프 시작 -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> <a href="https://www.instagram.com/p/CeI0liNN2B8/" target="_blank">
+                    <img src="img/swiperimg1.png" alt="swiperimg1"><i class="fa-brands fa-instagram instar"></i>
+                    <div class="SNS_hover">
+                        <span class="SNS_hover_text"><i class="fa-solid fa-heart"></i> 120k 
+                        <i class="fa-solid fa-comment"></i> 399</span>
+                    </div>
+                </a></div>
+            <div class="swiper-slide"> <a href="https://www.instagram.com/p/CeHGp2yNQyo/" target="_blank">
+                    <img src="img/swiperimg2.png" alt="swiperimg2"><i class="fa-brands fa-instagram instar"></i>
+                    <div class="SNS_hover">
+                        <span class="SNS_hover_text"><i class="fa-solid fa-heart"></i> 120k 
+                            <i class="fa-solid fa-comment"></i> 399</span>
+                    </div>
+                </a></div>
+            <div class="swiper-slide"> <a href="https://www.instagram.com/p/CeEGeYgowOo/" target="_blank">
+                    <img src="img/swiperimg3.png" alt="swiperimg3"><i class="fa-brands fa-instagram instar"></i>
+                    <div class="SNS_hover">
+                        <span class="SNS_hover_text"><i class="fa-solid fa-heart"></i> 120k 
+                            <i class="fa-solid fa-comment"></i> 399</span>
+                    </div>
+                </a></div>
+            <div class="swiper-slide"> <a href="https://www.instagram.com/p/CeBGIpeI6Ds/" target="_blank">
+                    <img src="img/swiperimg4.png" alt="swiperimg4"><i class="fa-brands fa-instagram instar"></i>
+                    <div class="SNS_hover">
+                        <span class="SNS_hover_text"><i class="fa-solid fa-heart"></i> 120k 
+                            <i class="fa-solid fa-comment"></i> 399</span>
+                    </div>
+                </a></div>
+            <div class="swiper-slide"> <a href="https://www.instagram.com/p/Cd6pmFsNxd2/" target="_blank">
+                    <img src="img/swiperimg5.png" alt="swiperimg5"><i class="fa-brands fa-instagram instar"></i>
+                    <div class="SNS_hover">
+                        <span class="SNS_hover_text"><i class="fa-solid fa-heart"></i> 120k 
+                            <i class="fa-solid fa-comment"></i> 399</span>
+                    </div>
+                </a></div>
+            <div class="swiper-slide"> <a href="https://www.instagram.com/p/Cd4E1jVqf_Z/" target="_blank">
+                    <img src="img/swiperimg6.png" alt="swiperimg6"><i class="fa-brands fa-instagram instar"></i>
+                    <div class="SNS_hover">
+                        <span class="SNS_hover_text"><i class="fa-solid fa-heart"></i> 120k 
+                            <i class="fa-solid fa-comment"></i> 399</span>
+                    </div>
+                </a></div>
+            <div class="swiper-slide"> <a href="https://www.instagram.com/p/CdnxwU4qlL0/" target="_blank">
+                    <img src="img/swiperimg7.png" alt="swiperimg7"><i class="fa-brands fa-instagram instar"></i>
+                    <div class="SNS_hover">
+                        <span class="SNS_hover_text"><i class="fa-solid fa-heart"></i> 120k 
+                            <i class="fa-solid fa-comment"></i> 399</span>
+                    </div>
+                </a></div>
+            <div class="swiper-slide"> <a href="https://www.instagram.com/p/CeI0liNN2B8/" target="_blank">
+                    <img src="img/swiperimg8.png" alt="swiperimg8"><i class="fa-brands fa-instagram instar"></i>
+                    <div class="SNS_hover">
+                        <span class="SNS_hover_text"><i class="fa-solid fa-heart"></i> 120k 
+                            <i class="fa-solid fa-comment"></i> 399</span>
+                    </div>
+                </a></div>
+            <div class="swiper-slide"> <a href="https://www.instagram.com/p/CeHGp2yNQyo/" target="_blank">
+                    <img src="img/swiperimg9.png" alt="swiperimg9"><i class="fa-brands fa-instagram instar"></i>
+                    <div class="SNS_hover">
+                        <span class="SNS_hover_text"><i class="fa-solid fa-heart"></i> 120k 
+                            <i class="fa-solid fa-comment"></i> 399</span>
+                    </div>
+                </a></div>
+            <div class="swiper-slide"> <a href="https://www.instagram.com/p/CeEGeYgowOo/" target="_blank">
+                    <img src="img/swiperimg10.png" alt="swiperimg10"><i class="fa-brands fa-instagram instar"></i>
+                    <div class="SNS_hover">
+                        <span class="SNS_hover_text"><i class="fa-solid fa-heart"></i> 120k 
+                            <i class="fa-solid fa-comment"></i> 399</span>
+                    </div>
+                </a></div>
+            <div class="swiper-slide"> <a href="https://www.instagram.com/p/CeBGIpeI6Ds/" target="_blank">
+                    <img src="img/swiperimg11.png" alt="swiperimg11"><i class="fa-brands fa-instagram instar"></i>
+                    <div class="SNS_hover">
+                        <span class="SNS_hover_text"><i class="fa-solid fa-heart"></i> 120k 
+                            <i class="fa-solid fa-comment"></i> 399</span>
+                    </div>
+                </a></div>
+            <div class="swiper-slide"> <a href="https://www.instagram.com/p/Cd6pmFsNxd2/" target="_blank">
+                    <img src="img/swiperimg12.png" alt="swiperimg12"><i class="fa-brands fa-instagram instar"></i>
+                    <div class="SNS_hover">
+                        <span class="SNS_hover_text"><i class="fa-solid fa-heart"></i> 120k 
+                            <i class="fa-solid fa-comment"></i> 399</span>
+                    </div>
+                </a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- footer 시작 -->
+    <footer>
+        <div id="footer_main_box">
+            <div class="footer_top_box">
+                <div class="footer_top_nav_box">
+                    <nav class="footer_top_nav">
+                        <ul class="top_nav_ul">
+                            <li><h3>Models</h3></li>
+                            <li><a href="">arteon</a></li>
+                            <li><a href="">T-rOC</a></li>
+                            <li><a href="">타이어 에너지 효율 등급 정보</a></li>
+                            <li><a href="">전시장 찾기</a></li>
+                            <li><a href="">시승상담신청</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="footer_top_nav">
+                        <ul class="top_nav_ul">
+                            <li><h3>Explore Benz</h3></li>
+                            <li><a href="">My Benz</a></li>
+                            <li><a href="">Benz International</a></li>
+                            <li><a href="">Benz Approved Cars</a></li>
+                            <li><a href="">부품가격조회</a></li>
+                            <li><a href="">자주 묻는 질문</a></li>
+                            <li><a href="">서비스센터 찾기</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="footer_top_nav">
+                        <ul class="top_nav_ul">
+                            <li><h3>About us</h3></li>
+                            <li><a href="">Benz 소개</a></li>
+                            <li><a href="">인재와 채용</a></li>
+                            <li><a href="">윤리 시스템</a></li>
+                            <li><a href="">사설 수리업체를 위한 정보</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="footer_top_nav">
+                        <ul class="top_nav_ul">
+                            <li><h3>Social Media</h3></li>
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">Youtube</a></li>
+                            <li><a href="">네이버 포스트</a></li>
+                            <li><a href="">카카오톡 채널</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="footer_top_info">
+                    <ul class="footer_top_info_ul">
+                        <li><a href="">개인정보 처리 방침</a></li>
+                        <li>|</li>
+                        <li><a href="">전시장 찾기</a></li>
+                        <li>|</li>
+                        <li><a href="">서비스센터 찾기</a></li>
+                        <li>|</li>
+                        <li><a href="">시승상담신청</a></li>
+                        <li>|</li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="footer_top_comp_box">
+                    <small>© Mercedes-Benz 2022</small>
+                </div>
+            </div>
+            <div class="footer_bottom_box">
+                <div class="footer_bottom_info_box">
+                    <h2>안내사항 Mercedes-Benz</h2>
+                    <p>＊본 페이지 내 게재 된 이미지는 국내 적용되는 사양과 다를 수 있습니다.</p>
+                    <p>＊본 페이지 내 게재 된 연비는 표준모드에 의한 연비로서 도로 상태, 운전 방법, 차량 적재, 정비 상태 및 외기 온도 등에 따라 실주행 연비와 차이가 있습니다.</p>
+                    <p>＊차량에 적용된 운전자 보조 시스템은 안전장치가 아닌 운전자를 위한 편의 장치이므로 차량의 통제는 운전자의 판단에 의해 이루어져야 하며 본 시스템에만 의존할 경우 사고가 날 수 있습니다.</p>
+                    <p>＊고객 커뮤니케이션 센터 : 5509-3095</p>
+                    <p>＊고객지원센터 서비스 및 일반 문의 연락처 : 080-1588-1588</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/swiper.js"></script>
+</body>
+</html>
