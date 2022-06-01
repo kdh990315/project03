@@ -180,12 +180,23 @@ header.sticky nav ul li a {
     background-color: rgba(0, 0, 0, .7);
 }
 
-.video .contents {
+.contents {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    transition: 0.7s ease-out;
+    opacity: 0;
+}
+
+.contents.animate3 {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    opacity: 1;
 }
 
 .video .contents * {
@@ -249,6 +260,7 @@ header.sticky nav ul li a {
     pointer-events: auto;
 }
 /* 메인 인포 박스 */
+
 /* 첫번째 */
 .main_info_box {
     width: 1500px;
@@ -270,7 +282,17 @@ header.sticky nav ul li a {
 .main_info_box1_img a img {
     width: 100%;
     height: 100%;
-    transition: 0.5s ease-in;
+    transition: 0.7s ease-out;
+    transform: translate(-300px, 300px);
+    opacity: 0;
+}
+
+.main_info_box1_img a img.animate {
+    width: 100%;
+    height: 100%;
+
+    transform: translate(0);
+    opacity: 1;
 }
 
 .main_info_box1_img a img:hover {
@@ -280,6 +302,16 @@ header.sticky nav ul li a {
 .main_info_box1_text {
     width: 40%;
     height: 100%;
+    transform: translate(300px, 300px);
+    transition: 0.7s ease-out;
+    opacity: 0;
+}
+
+.main_info_box1_text.animate {
+    width: 40%;
+    height: 100%;
+    transform: translate(0);
+    opacity: 1;
 }
 
 .info_head {
@@ -318,6 +350,17 @@ header.sticky nav ul li a {
     bottom: 0;
 }
 
+.box2_left_img_box {
+    transform: translate(-300px, 300px);
+    opacity: 0;
+    transition: 0.7s ease-out;
+}
+
+.box2_left_img_box.animate1 {
+    transform: translate(0);
+    opacity: 1;
+}
+
 .box2_left_img_box a img {
     width: 100%;
     transition: 0.5s ease-in;
@@ -352,6 +395,17 @@ header.sticky nav ul li a {
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.box2_rigth_img_box {
+    transform: translate(300px, 300px);
+    opacity: 0;
+    transition: 0.7s ease-out;
+}
+
+.box2_rigth_img_box.animate2 {
+    opacity: 1;
+    transform: translate(0);
 }
 
 .box2_rigth_img_box img {
@@ -391,7 +445,7 @@ header.sticky nav ul li a {
     align-items: flex-start;
 }
 
-.main_text_box p:nth-of-type(1) {
+.main_text_str {
     color: white;
     font-size: 64px;
     font-weight: 700;
@@ -399,7 +453,7 @@ header.sticky nav ul li a {
     margin-bottom: 30px;
 }
 
-.main_text_box p:nth-of-type(2) {
+.main_text_p{
     margin-bottom: 30px;
     font-size: 18px;
     color: #bbbbbb;
@@ -554,6 +608,54 @@ header.sticky nav ul li a {
     color: #fff;
 }
 
+.box1, .box4 {
+    transform: translate(-300px, 300px);
+    opacity: 0;
+    transition: 0.7s ease-out;
+}
+
+.box2, .box5 {
+    transform: translate(0, 300px);
+    opacity: 0;
+    transition: 0.7s ease-out;
+}
+
+.box3, .box6 {
+    transform: translate(300px, 300px);
+    opacity: 0;
+    transition: 0.7s ease-out;
+}
+.box1.animate4 {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.box2.animate5 {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.box3.animate6 {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.box4.animate7 {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.box5.animate8 {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.box6.animate9 {
+    transform: translate(0);
+    opacity: 1;
+}
+
+
 .item_box::before, .item_box::after {
     content: "";
     position: absolute;
@@ -586,6 +688,16 @@ header.sticky nav ul li a {
     height: 500px;
     position: relative;
     margin-bottom: 200px;
+    opacity: 0;
+    transition: 2s ease-out;
+}
+
+.test_drive_box.animate10 {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-bottom: 200px;
+    opacity: 1;
 }
 
 .test_drive_text_box {
@@ -815,4 +927,3 @@ header.sticky nav ul li a {
 .footer_bottom_info_box p {
     color: rgb(158, 158, 158);
 }
-
