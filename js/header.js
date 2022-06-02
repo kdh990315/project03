@@ -1,3 +1,17 @@
+$(document).ready(function() {
+    $('.toggle').click(function () {
+        $('.main_menu').slideToggle();
+    });
+
+    $(window).resize(function () {
+        if ($(window).width() > 768) {
+           $('.main_menu').show(); 
+        } else {
+            $('.main_menu').hide(); 
+        }
+    });
+});
+
 document.addEventListener('scroll', function() {
     var $header = $('header');
 
