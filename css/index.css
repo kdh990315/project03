@@ -987,6 +987,10 @@ header.sticky nav ul li a {
         margin-left: 15px;
     }
 
+    header.sticky i {
+        color: black;
+    }
+
     .main_menu {
         display: none;
     }
@@ -1007,7 +1011,7 @@ header.sticky nav ul li a {
     .main_container {
         position: relative;
         width: 100%;
-        height: 100vh;
+        height: 75vh;
         overflow: hidden;
     }
 
@@ -1032,7 +1036,7 @@ header.sticky nav ul li a {
 
     .main_img_box {
         width: 100vw;
-        height: 100vh;
+        height: 100%;
     }
 
     .main_img_box img {
@@ -1054,7 +1058,7 @@ header.sticky nav ul li a {
 
     .main_text_str {
         color: white;
-        font-size: 64px;
+        font-size: 45px;
         font-weight: 700;
         letter-spacing: 3px;
         margin-bottom: 30px;
@@ -1062,7 +1066,7 @@ header.sticky nav ul li a {
 
     .main_text_p {
         margin-bottom: 30px;
-        font-size: 18px;
+        font-size: 14px;
         color: #bbbbbb;
     }
 
@@ -1193,7 +1197,7 @@ header.sticky nav ul li a {
     }
 
     .box2_left_img_box {
-        transform: translate(-300px, 300px);
+        transform: translateY(100px);
         opacity: 0;
         transition: 0.7s ease-out;
         text-align: center;
@@ -1238,7 +1242,7 @@ header.sticky nav ul li a {
     }
 
     .box2_rigth_img_box {
-        transform: translate(300px, 300px);
+        transform: translateY(100px);
         opacity: 0;
         transition: 0.7s ease-out;
     }
@@ -1397,8 +1401,102 @@ header.sticky nav ul li a {
         padding: 0 32px;
     }
 
+    .box1, .box4 {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.7s ease-out;
+    }
+    
+    .box2, .box5 {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.7s ease-out;
+    }
+    
+    .box3, .box6 {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.7s ease-out;
+    }
+
     .item_box:hover a {
         background-position: center;
+    }
+
+        /* 스와이퍼 시작 */
+    .swiper {
+        width: 100%;
+        height: 65vh;
+        margin-bottom: 200px;
+        cursor: url(../img/swipe.png),auto;
+    }
+
+    .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-slide a {
+        position: absolute;
+    }
+
+    .swiper-slide .instar {
+        position: absolute;
+        bottom: 3%;
+        right: 4%;
+        font-size: 33px;
+        color: #ffffff;
+    }
+
+    .swiper-wrapper {
+        align-items: center;
+    }
+
+    /* 스와이퍼 hover효과 */
+
+    .swiper-slide a:hover .SNS_hover{
+        display: block;
+        cursor: url(../img/swipe.png),auto;
+    }
+
+    .SNS_hover {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 19px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, .6);
+        width: 100%;
+        height: 100%;
+        display: none;
+        transition: 0.5s ease-in;
+    }
+
+    .SNS_hover_text {
+        padding: 5px;
+        padding: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     /* footer시작 */
@@ -1554,6 +1652,21 @@ header.sticky nav ul li a {
         margin-left: 15px;
     }
 
+    header.sticky {
+        position: fixed;
+        padding: 7px 0;
+        background: #fff;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    header.sticky nav ul li a {
+        color: #c7b299;
+    }
+
+    header.sticky i {
+        color: black;
+    }
+
     .main_menu {
         display: none;
     }
@@ -1611,7 +1724,7 @@ header.sticky nav ul li a {
         width: 90%;
         height: 600px;
         position: absolute;
-        top: 50%;
+        top: 85%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: flex;
@@ -1761,7 +1874,7 @@ header.sticky nav ul li a {
     }
 
     .box2_left_img_box {
-        transform: translate(-300px, 300px);
+        transform: translateY(100px);
         opacity: 0;
         transition: 0.7s ease-out;
         text-align: center;
@@ -1806,7 +1919,7 @@ header.sticky nav ul li a {
     }
 
     .box2_rigth_img_box {
-        transform: translate(300px, 300px);
+        transform: translateY(100px);
         opacity: 0;
         transition: 0.7s ease-out;
     }
@@ -2020,6 +2133,53 @@ header.sticky nav ul li a {
         background-position: center;
     }
 
+    .box1, .box2 {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.7s ease-out;
+    }
+    
+    .box3, .box4 {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.7s ease-out;
+    }
+    
+    .box5, .box6 {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.7s ease-out;
+    }
+    .box1.animate4 {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .box2.animate5 {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .box3.animate6 {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .box4.animate7 {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .box5.animate8 {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .box6.animate9 {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
     .SNS_header_name_box h1 {
         font-size: 25px;
         padding: 50px 0 30px 0;
@@ -2036,6 +2196,82 @@ header.sticky nav ul li a {
         height: 30vh;
         margin-bottom: 200px;
         cursor: url(../img/swipe.png),auto;
+    }
+
+    /* 스와이퍼 시작 */
+    .swiper {
+        width: 100%;
+        height: 65vh;
+        margin-bottom: 200px;
+        cursor: url(../img/swipe.png),auto;
+    }
+        
+    .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-slide a {
+        position: absolute;
+    }
+
+    .swiper-slide .instar {
+        position: absolute;
+        bottom: 3%;
+        right: 4%;
+        font-size: 33px;
+        color: #ffffff;
+    }
+
+    .swiper-wrapper {
+        align-items: center;
+    }
+
+    /* 스와이퍼 hover효과 */
+
+    .swiper-slide a:hover .SNS_hover{
+        display: block;
+        cursor: url(../img/swipe.png),auto;
+    }
+
+    .SNS_hover {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 19px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, .6);
+        width: 100%;
+        height: 100%;
+        display: none;
+        transition: 0.5s ease-in;
+    }
+
+    .SNS_hover_text {
+        padding: 5px;
+        padding: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     /* footer시작 */
