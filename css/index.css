@@ -1958,7 +1958,7 @@ header.sticky nav ul li a {
     /* video */
     .video {
         background: url(../img/fac.jpg) no-repeat center center/cover;
-        height: 850px;
+        height: 650px;
         position: relative;
     }
 
@@ -2300,6 +2300,14 @@ header.sticky nav ul li a {
     .top_nav_ul {
         line-height: 25px;
         padding: 30px;
+    }
+
+    .top_nav_ul:first-child {
+        padding-left: 0;
+    }
+
+    .top_nav_ul:last-child {
+        padding-right: 0;
     }
 
     .top_nav_ul li:first-child {

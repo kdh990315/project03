@@ -18,4 +18,9 @@ $(document).ready(function() {
         $('iframe').attr('src', newUrl2);
     });
 
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        $('.inner iframe').attr({"width" : "550", "height" : "275"});
+    } else if (window.matchMedia("(max-width: 480px)").matches) {
+        $('.inner iframe').attr({"width" : "300", "height" : "175"});
+    }
 });//ready(function()

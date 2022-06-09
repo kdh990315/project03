@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var btn = document.getElementById('back_to_top'),
+    var btt = document.getElementById('back_to_top'),
         docElem = document.documentElement,
         offset,
         scrollPos,
