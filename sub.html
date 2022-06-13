@@ -21,7 +21,7 @@
     <header>
         <div class="container">
             <h1 class="logo">
-                <a href=""></a>
+                <a href="#"></a>
             </h1>
             <nav>
                 <ul class="main_menu">
@@ -160,25 +160,38 @@
         </div>
     </div>
 
-    <div id="car_color_wid_box">
-        <div class="car_color_box">
-            <div class="car_color_pick" num="1">EXCLUSIVE</div>
-            <div class="car_color_pick" num="2">AVANTGARDE</div>
-            <div class="car_color_pick" num="3">AMG LIne</div>
-        </div>
-        <div class="color_box_wrap">
 
-            <div class="color_box color1">
-                <img src="img/eximg.jpg" alt="" num="1">
+        <div id="page">
+            <div class="wrapper">
+                <div class="before">
+                    <img class="content-image" src="img/eximg.jpg" draggable="false" />
+                </div>
+                <div class="after">
+                    <img class="content-image" src="img/eximg2.jpeg" draggable="false" />
+                </div>
+                <div class="scroller">
+                    <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                        viewBox="0 0 100 100">
+                        <polygon points="0 50 37 68 37 32 0 50" style="fill:#fff" />
+                        <polygon points="100 50 64 32 64 68 100 50" style="fill:#fff" />
+                    </svg>
+                </div>
             </div>
-            <div class="color_box color2">
-                <img src="img/eximg2.jpeg" alt="" num="2">
-            </div>
-            <div class="color_box color3">
-                <img src="img/eximg3.jpg" alt="" num="3">
+            <div class="car_color_mom">
+                <div class="car_color_box">
+                    <div class="car_color_pick">EXCLUSIVE</div>
+                    <div class="car_color_pick">AVANTGARDE</div>
+                    <div class="car_color_pick">AMG LIne</div>
+                </div>
+                <div class="car_color_box">
+                    <div class="car_color_pick">EXCLUSIVE</div>
+                    <div class="car_color_pick">AVANTGARDE</div>
+                    <div class="car_color_pick">AMG LIne</div>
+                </div>
             </div>
         </div>
-    </div>
+        <script src="js/comparison.js"></script>
+        <script src="js/comparisonimg.js"></script>
         <!-- footer 시작 -->
         <footer>
             <div id="footer_main_box">
@@ -257,6 +270,7 @@
                 </div>
             </div>
         </footer>
+
 </body>
 </html>
 
