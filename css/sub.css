@@ -294,6 +294,11 @@ header.sticky nav ul li a {
     transform: translateX(-50%);
 }
 
+.main_info_rigth_text_box h2 {
+    font-size: 32px;
+    padding: 10px 0;
+}
+
 .row {
     width: 100%;
     margin-top: 200px;
@@ -351,7 +356,6 @@ header.sticky nav ul li a {
     letter-spacing: 1px;
     cursor: pointer;
     color: #fff;
-    background-color: #c7b299;
     font-weight: normal;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -552,4 +556,1113 @@ header.sticky nav ul li a {
 
 .footer_bottom_info_box p {
     color: rgb(158, 158, 158);
+}
+
+
+
+/* 반응형 테블릿 */
+
+@media screen and (max-width:768px) {
+/* 헤더 시작 */
+
+header {
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    padding: 30px 0;
+    transition: 0.3s;
+    background-color: rgba(24, 24, 24, 0.1);
+
+}
+
+header .logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    float: left;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+header nav ul li a:hover, header nav ul li a:active {
+    color: #c7b299;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_menu li {
+    margin-right: 29px;
+}
+
+.main_menu li:last-child {
+    margin-right: 60px;
+}
+
+.icon_box li {
+    margin-right: 25px;
+}
+
+.icon_box li:last-child {
+    margin-right: 0;
+}
+
+header .container .logo a {
+    width: 60px;
+    height: 60px;
+    background: url(../img/mainlogo.png) no-repeat;
+    display: block;
+    background-size: contain;
+}
+
+/* 스크롤이 아래로 내려갔을 때의 헤더 */
+header.sticky {
+    width: 100%;
+    position: fixed;
+    padding: 7px 0;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+header.sticky nav ul li a {
+    color: #c7b299;
+}
+
+/* 반응형 헤더 */
+.toggle {
+    display: none;
+}
+
+#main_box {
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+}
+
+#main_box img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.main_text_box {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-10%, -50%);
+}
+
+.main_text_box h2 {
+    font-size: 64px;
+}
+
+.main_text_box small {
+    font-size: 30px;
+}
+
+.main_text_box strong {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.main_info_box1 {
+    width: 100vw;
+    height: 34vh;
+    margin-top: 200px;
+    display: flex;
+}
+
+.main_info_box1_img {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transform: translate(-10px, -10px);
+}
+
+.main_info_box1_img img {
+    width: 100%;
+    height: 100%;
+    transform: none;
+}
+
+.main_info_box1_img_text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.info_box1_text_box {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transform: translateY(-10px);
+}
+
+.info_box1_text_box h2 {
+    font-size: 32px;
+    padding: 10px 0;
+}
+
+.info_box1_text_box2 {
+    text-align: left;
+    width: 100%;
+}
+
+
+/* 메인 인포 박스 2 */
+
+.main_info_box2 {
+    width: 100%;
+    height: 50vh;
+    transform: none;
+}
+
+.main_info_box2_img {
+    width: 50%;
+    transform: translateY(100px);
+    overflow: none;
+}
+
+.main_info_box2_img img {
+    width: 100%;
+    height: auto;
+    transform: translateX(10px);
+}
+
+.main_info_box2_img_text {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.info_box2_text_box {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    transform: none;
+}
+
+.info_box2_text_box h2 {
+    font-size: 32px;
+    padding: 10px 0;
+}
+
+.info_box2_text_box2 {
+    text-align: left;
+    width: 100%;
+}
+
+.main_info_box3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.main_info__right_box3 {
+    width: 50%;
+    transform: none;
+    overflow: hidden;
+}
+
+.main_info__right_box3 img{
+    width: 100%;
+    transform: translate(-10px, -10px);
+}
+
+.main_info__left_box3 {
+    width: 50%;
+    width: 50%;
+    overflow: hidden;
+    transform: none;
+}
+
+.main_info__left_box3 img{
+    width: 100%;
+    transform: none;
+    transform: translate(10px, -10px);
+}
+
+.main_info_box4 {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    transform: none;
+}
+
+.main_info_left_box4 {
+    width: 50%;
+    height: 100%;
+    transform: translate(-10px, 10px);
+    overflow: hidden;
+}
+
+.main_info_left_box4 img {
+    width: 100%;
+    height: 100%;
+    transform: none;
+}
+
+.main_info_rigth_box4 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main_info_rigth_text_box {
+    position: absolute;
+    left: 0;
+    transform: none;
+}
+
+.main_info_rigth_text_box h2 {
+    font-size: 32px;
+    padding: 10px 0;
+}
+
+.row {
+    width: 100%;
+    margin-top: 200px;
+}
+
+.row_box {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row_box ul {
+    padding: 20px 0;
+}
+
+.row_box ul li {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #666;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.row_sn {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#car_color_wid_box {
+    width: 100%;
+}
+
+.car_color_mom {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.car_color_box {
+    width: 329px;
+    display: flex;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.car_color_pick {
+    width: 360px;
+    height: 25px;
+    text-align: center;
+    line-height: 23px;
+    border: 1px solid #666;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: normal;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+    width: 100%;
+    height: 433px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.before,
+.after {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.content-image {
+    height: 100%;
+}
+
+.after {
+    width: 125px;
+}
+
+.scroller {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0.9;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.scroller:hover {
+    opacity: 1;
+}
+
+.scrolling {
+    pointer-events: none;
+    opacity: 1;
+    z-index: 1;
+}
+
+.scroller__thumb {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.scroller:before,
+.scroller:after {
+    content: " ";
+    display: block;
+    width: 7px;
+    height: 9999px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3.5px;
+    z-index: 30;
+    transition: 0.1s;
+}
+
+.scroller:before {
+    top: 100%;
+}
+
+.scroller:after {
+    bottom: 100%;
+}
+
+/* If you want to cahnge the colors, make sure you change the fill in the svgs to match */
+.scroller {
+    border: 5px solid #fff;
+}
+
+.scroller:before,
+.scroller:after {
+    background: #fff;
+}
+
+
+
+
+
+
+/* footer시작 */
+#footer_main_box {
+    width: 100%;
+    height: 720px;
+    margin-top: 1000px;
+}
+
+.footer_top_box {
+    width: 100%;
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 2px solid #666;
+}
+
+.footer_top_nav_box {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid black;
+}
+
+.top_nav_ul {
+    line-height: 35px;
+    padding: 30px;
+}
+
+.top_nav_ul li:first-child {
+    line-height: 50px;
+}
+
+.top_nav_ul li a {
+    color: #001E52;
+}
+
+.top_nav_ul li a:hover {
+    color: #0e00d1;
+}
+
+.footer_top_info_ul {
+    float: left;
+    padding: 0 30px;
+    margin-top: 70px;
+}
+
+.footer_top_info_ul li {
+    float: right;
+    margin-right: 15px;
+}
+
+.footer_top_info_ul li a {
+    color: #001E52;
+}
+
+.footer_top_info_ul li a:hover {
+    color: #0e00d1;
+}
+
+.footer_top_comp_box {
+    width: 400px;
+    height: 70px;
+    border-top: 1px solid rgb(211, 211, 211);
+    position: absolute;
+    bottom: 0;
+    margin: 0 30px;
+}
+
+.footer_top_comp_box small {
+    position: absolute;
+    top: 20%;
+}
+
+.footer_bottom_box {
+    width: 100%;
+    height: 220px;
+    margin: 0 auto;
+}
+
+.footer_bottom_info_box {
+    padding: 65px 0 0 30px;
+}
+
+.footer_bottom_info_box h2{
+    font-size: 20px;
+    color: rgb(128, 128, 128);
+    padding: 10px 0;
+}
+
+.footer_bottom_info_box p {
+    color: rgb(158, 158, 158);
+}
+}
+
+@media screen and (max-width:480px) {
+    header {
+        position: absolute;
+        z-index: 1000;
+        left: 0;
+        right: 0;
+        padding: 30px 0;
+        transition: 0.3s;
+        background-color: rgba(24, 24, 24, 0.1);
+    
+    }
+    
+    header .logo {
+        float: left;
+    }
+    
+    header nav {
+        float: right;
+    }
+    
+    header nav ul {
+        float: left;
+    }
+    
+    header nav ul li {
+        float: left;
+    }
+    
+    header nav ul li a {
+        font-size: 14px;
+        color: #fff;
+    }
+    
+    header nav ul li a:hover, header nav ul li a:active {
+        color: #c7b299;
+    }
+    
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .main_menu li {
+        margin-right: 29px;
+    }
+    
+    .main_menu li:last-child {
+        margin-right: 60px;
+    }
+    
+    .icon_box li {
+        margin-right: 25px;
+    }
+    
+    .icon_box li:last-child {
+        margin-right: 0;
+    }
+    
+    header .container .logo a {
+        width: 60px;
+        height: 60px;
+        background: url(../img/mainlogo.png) no-repeat;
+        display: block;
+        background-size: contain;
+    }
+    
+    /* 스크롤이 아래로 내려갔을 때의 헤더 */
+    header.sticky {
+        width: 100%;
+        position: fixed;
+        padding: 7px 0;
+        background: #fff;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    header.sticky nav ul li a {
+        color: #c7b299;
+    }
+    
+    /* 반응형 헤더 */
+    .toggle {
+        display: none;
+    }
+    
+    #main_box {
+        width: 100vw;
+        height: 63vh;
+        position: relative;
+    }
+    
+    #main_box img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    .main_text_box {
+        position: absolute;
+        color: #fff;
+        top: 33%;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(-2%, -50%);
+    }
+    
+    .main_text_box h2 {
+        font-size: 50px;
+    }
+    
+    .main_text_box small {
+        font-size: 30px;
+    }
+    
+    .main_text_box strong {
+        font-size: 17px;
+        letter-spacing: 3px;
+    }
+    
+    .main_info_box1 {
+        width: 100vw;
+        height: 34vh;
+        margin-top: 200px;
+        display: block;
+    }
+    
+    .main_info_box1_img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transform: none;
+    }
+    
+    .main_info_box1_img img {
+        width: 100%;
+        height: 100%;
+        transform: none;
+    }
+    
+    .main_info_box1_img_text {
+        width: 100%;
+        height: 100%;
+        display: block;
+        align-items: center;
+        margin-top: 400px;
+    }
+    
+    .info_box1_text_box {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        transform: translateY(280px);
+    }
+    
+    .info_box1_text_box h2 {
+        font-size: 32px;
+        padding: 10px 0;
+    }
+    
+    .info_box1_text_box2 {
+        text-align: left;
+        width: 100%;
+    }
+    
+    
+    /* 메인 인포 박스 2 */
+    
+    .main_info_box2 {
+        width: 100%;
+        height: 50vh;
+        transform: none;
+        display: block;
+        margin: 40px 0;
+    }
+    
+    .main_info_box2_img {
+        width: 100%;
+        transform: none;
+        margin-top: 370px;
+        overflow: visible;
+    }
+    
+    .main_info_box2_img img {
+        width: 100%;
+        height: auto;
+        transform: none;
+    }
+    
+    .main_info_box2_img_text {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    .info_box2_text_box {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        transform: none;
+        top: 30%;
+    }
+    
+    .info_box2_text_box h2 {
+        font-size: 32px;
+        padding: 10px 0;
+    }
+    
+    .info_box2_text_box2 {
+        text-align: left;
+        width: 100%;
+    }
+    
+    .main_info_box3 {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 525px
+    }
+    
+    .main_info__right_box3 {
+        width: 100%;
+        transform: none;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+    
+    .main_info__right_box3 img{
+        width: 100%;
+        transform: none;
+    }
+    
+    .main_info__left_box3 {
+        width: 100%;
+        overflow: hidden;
+        transform: none;
+        margin-bottom: 50px;
+    }
+    
+    .main_info__left_box3 img{
+        width: 100%;
+        transform: none;
+    }
+    
+    .main_info_box4 {
+        width: 100%;
+        height: 50vh;
+        display: block;
+        transform: none;
+    }
+    
+    .main_info_left_box4 {
+        width: 100%;
+        height: 60%;
+        transform: none;
+        overflow: hidden;
+    }
+    
+    .main_info_left_box4 img {
+        width: 100%;
+        height: 100%;
+        transform: none;
+    }
+    
+    .main_info_rigth_box4 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    .main_info_rigth_text_box {
+        position: absolute;
+        left: 0;
+        transform: none;
+    }
+    
+    .main_info_rigth_text_box h2 {
+        font-size: 32px;
+        padding: 10px 0;
+    }
+    
+    .row {
+        width: 100%;
+        margin-top: 250px;
+    }
+    
+    .row_box {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .row_box ul {
+        padding: 20px 0;
+    }
+    
+    .row_box ul li {
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 1px;
+        border-bottom: 1px solid #666;
+        padding-top: 35px;
+        padding-bottom: 20px;
+    }
+    
+    .row_sn {
+        font-size: 17px;
+        font-weight: 700;
+    }
+    
+    #car_color_wid_box {
+        width: 100%;
+    }
+    
+    .car_color_mom {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 65.5%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+    
+    .car_color_box {
+        width: 200px;
+        display: flex;
+        margin: 0 auto;
+        font-size: 10px;
+    }
+    
+    .car_color_pick {
+        width: 360px;
+        height: 19px;
+        text-align: center;
+        line-height: 18px;
+        border: 1px solid #666;
+        letter-spacing: 1px;
+        cursor: pointer;
+        color: #fff;
+        font-weight: normal;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .wrapper {
+        width: 100%;
+        height: 240px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    
+    #page {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    .before,
+    .after {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-color: white;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        overflow: hidden;
+    }
+    
+    .content-image {
+        height: 100%;
+    }
+    
+    .after {
+        width: 125px;
+    }
+    
+    .scroller {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background-color: transparent;
+        opacity: 0.9;
+        pointer-events: auto;
+        cursor: pointer;
+    }
+    
+    .scroller:hover {
+        opacity: 1;
+    }
+    
+    .scrolling {
+        pointer-events: none;
+        opacity: 1;
+        z-index: 1;
+    }
+    
+    .scroller__thumb {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+    
+    .scroller:before,
+    .scroller:after {
+        content: " ";
+        display: block;
+        width: 7px;
+        height: 9999px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3.5px;
+        z-index: 30;
+        transition: 0.1s;
+    }
+    
+    .scroller:before {
+        top: 100%;
+    }
+    
+    .scroller:after {
+        bottom: 100%;
+    }
+    
+    /* If you want to cahnge the colors, make sure you change the fill in the svgs to match */
+    .scroller {
+        border: 5px solid #fff;
+    }
+    
+    .scroller:before,
+    .scroller:after {
+        background: #fff;
+    }
+    
+    
+    
+    
+    
+    
+    /* footer시작 */
+    #footer_main_box {
+        width: 100%;
+        height: 720px;
+        margin-top: 1000px;
+    }
+    
+    .footer_top_box {
+        width: 100%;
+        height: 620px;
+        margin: 0 auto;
+        position: relative;
+        border-bottom: 2px solid #666;
+    }
+    
+    .footer_top_nav_box {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 3px solid black;
+        flex-wrap: wrap;
+    }
+
+    .footer_top_nav {
+        width: 50%;
+    }
+    
+    .top_nav_ul {
+        line-height: 35px;
+        padding: 15px;
+    }
+    
+    .top_nav_ul li:first-child {
+        line-height: 50px;
+    }
+    
+    .top_nav_ul li a {
+        color: #001E52;
+    }
+    
+    .top_nav_ul li a:hover {
+        color: #0e00d1;
+    }
+    
+    .footer_top_info_ul {
+        float: left;
+        padding: 0 30px;
+        margin-top: 70px;
+        display: none;
+    }
+    
+    .footer_top_info_ul li {
+        float: right;
+        margin-right: 15px;
+    }
+    
+    .footer_top_info_ul li a {
+        color: #001E52;
+    }
+    
+    .footer_top_info_ul li a:hover {
+        color: #0e00d1;
+    }
+    
+    .footer_top_comp_box {
+        width: 400px;
+        height: 70px;
+        border-top: 1px solid rgb(211, 211, 211);
+        position: absolute;
+        bottom: 0;
+        margin: 0 10px;
+    }
+    
+    .footer_top_comp_box small {
+        position: absolute;
+        top: 20%;
+    }
+    
+    .footer_bottom_box {
+        width: 100%;
+        height: 220px;
+        margin: 0 auto;
+        display: none;
+    }
+    
+    .footer_bottom_info_box {
+        padding: 65px 0 0 30px;
+    }
+    
+    .footer_bottom_info_box h2{
+        font-size: 20px;
+        color: rgb(128, 128, 128);
+        padding: 10px 0;
+    }
+    
+    .footer_bottom_info_box p {
+        color: rgb(158, 158, 158);
+    }
 }
