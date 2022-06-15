@@ -2,6 +2,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Gentium Plus', serif;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 ul,
@@ -174,6 +179,12 @@ header.sticky nav ul li a {
 .info_box1_text_box h2 {
     font-size: 32px;
     padding: 10px 0;
+    font-weight: 600;
+}
+
+.info_box1_text_box p {
+    letter-spacing: 1px;
+    line-height: 20px;
 }
 
 .info_box1_text_box2 {
@@ -224,6 +235,12 @@ header.sticky nav ul li a {
 .info_box2_text_box h2 {
     font-size: 32px;
     padding: 10px 0;
+    font-weight: 600;
+}
+
+.info_box2_text_box p {
+    letter-spacing: 1px;
+    line-height: 20px;
 }
 
 .info_box2_text_box2 {
@@ -297,6 +314,12 @@ header.sticky nav ul li a {
 .main_info_rigth_text_box h2 {
     font-size: 32px;
     padding: 10px 0;
+    font-weight: 600;
+}
+
+.main_info_rigth_text_box p {
+    letter-spacing: 1px;
+    line-height: 20px;
 }
 
 .row {
@@ -474,7 +497,7 @@ header.sticky nav ul li a {
 }
 
 .footer_top_box {
-    width: 1500px;
+    width: 79vw;
     height: 500px;
     margin: 0 auto;
     position: relative;
@@ -539,7 +562,7 @@ header.sticky nav ul li a {
 }
 
 .footer_bottom_box {
-    width: 1500px;
+    width: 79vw;
     height: 220px;
     margin: 0 auto;
 }
@@ -565,90 +588,79 @@ header.sticky nav ul li a {
 @media screen and (max-width:768px) {
 /* 헤더 시작 */
 
-header {
-    position: absolute;
-    z-index: 1000;
-    left: 0;
-    right: 0;
-    padding: 30px 0;
-    transition: 0.3s;
-    background-color: rgba(24, 24, 24, 0.1);
-
-}
-
-header .logo {
-    float: left;
-}
-
-header nav {
-    float: right;
-}
-
-header nav ul {
-    float: left;
-}
-
-header nav ul li {
-    float: left;
-}
-
-header nav ul li a {
-    font-size: 14px;
-    color: #fff;
-}
-
-header nav ul li a:hover, header nav ul li a:active {
-    color: #c7b299;
-}
-
 .container {
     width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 15px;
+    display: block;
 }
 
-.main_menu li {
-    margin-right: 29px;
+header {
+    position: static;
+    top: 0;
+    background: rgb(0, 0, 0);
+    padding: 20px 0 0;
 }
 
-.main_menu li:last-child {
-    margin-right: 60px;
+.toggle {
+    color: white;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    line-height: 56px;
+    cursor: pointer;
 }
 
-.icon_box li {
-    margin-right: 25px;
+header .logo a {
+    background-image: url(../img/mainlogo.png);
 }
 
 .icon_box li:last-child {
-    margin-right: 0;
-}
-
-header .container .logo a {
-    width: 60px;
-    height: 60px;
-    background: url(../img/mainlogo.png) no-repeat;
-    display: block;
-    background-size: contain;
-}
-
-/* 스크롤이 아래로 내려갔을 때의 헤더 */
-header.sticky {
-    width: 100%;
-    position: fixed;
-    padding: 7px 0;
-    background: #fff;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-header.sticky nav ul li a {
-    color: #c7b299;
-}
-
-/* 반응형 헤더 */
-.toggle {
     display: none;
+}
+
+.icon_box li a {
+    color: #555;
+}
+
+.icon_box li a i {
+    color: white;
+}
+
+header nav {
+    float: none;
+    background: #111;
+    padding: 0 15px;
+}
+
+header nav ul {
+    float: none;
+}
+
+header .logo {
+    float: none;
+    padding-bottom: 20px;
+    margin-left: 15px;
+}
+
+header.sticky i {
+    color: black;
+}
+
+.main_menu {
+    display: none;
+}
+
+.main_menu li {
+    float: none;
+    border-bottom: 1px solid #252525;
+    padding: 15px 0;
+}
+
+.icon_box {
+    position: absolute;
+    top: 36px;
+    right: 30px;
 }
 
 #main_box {
@@ -1075,12 +1087,12 @@ header.sticky nav ul li a {
 }
 
 .footer_top_comp_box {
-    width: 400px;
+    width: 100%;
     height: 70px;
     border-top: 1px solid rgb(211, 211, 211);
     position: absolute;
     bottom: 0;
-    margin: 0 30px;
+    margin: 0;
 }
 
 .footer_top_comp_box small {
@@ -1109,91 +1121,80 @@ header.sticky nav ul li a {
 }
 }
 
-@media screen and (max-width:480px) {
-    header {
-        position: absolute;
-        z-index: 1000;
-        left: 0;
-        right: 0;
-        padding: 30px 0;
-        transition: 0.3s;
-        background-color: rgba(24, 24, 24, 0.1);
-    
-    }
-    
-    header .logo {
-        float: left;
-    }
-    
-    header nav {
-        float: right;
-    }
-    
-    header nav ul {
-        float: left;
-    }
-    
-    header nav ul li {
-        float: left;
-    }
-    
-    header nav ul li a {
-        font-size: 14px;
-        color: #fff;
-    }
-    
-    header nav ul li a:hover, header nav ul li a:active {
-        color: #c7b299;
-    }
-    
+@media (max-width:480px) {
     .container {
         width: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .main_menu li {
-        margin-right: 29px;
-    }
-    
-    .main_menu li:last-child {
-        margin-right: 60px;
-    }
-    
-    .icon_box li {
-        margin-right: 25px;
-    }
-    
-    .icon_box li:last-child {
-        margin-right: 0;
-    }
-    
-    header .container .logo a {
-        width: 60px;
-        height: 60px;
-        background: url(../img/mainlogo.png) no-repeat;
+        padding: 0 15px;
         display: block;
-        background-size: contain;
     }
-    
-    /* 스크롤이 아래로 내려갔을 때의 헤더 */
-    header.sticky {
-        width: 100%;
-        position: fixed;
-        padding: 7px 0;
-        background: #fff;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+
+    header {
+        position: static;
+        top: 0;
+        background: rgb(0, 0, 0);
+        padding: 20px 0 0;
     }
-    
-    header.sticky nav ul li a {
-        color: #c7b299;
-    }
-    
-    /* 반응형 헤더 */
+
     .toggle {
+        color: white;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        line-height: 56px;
+        cursor: pointer;
+    }
+
+    header .logo a {
+        background-image: url(../img/mainlogo.png);
+    }
+
+    .icon_box li:last-child {
         display: none;
+    }
+
+    .icon_box li a {
+        color: #555;
+    }
+
+    .icon_box li a i {
+        color: white;
+    }
+
+    header nav {
+        float: none;
+        background: #111;
+        padding: 0 15px;
+    }
+
+    header nav ul {
+        float: none;
+    }
+
+    header .logo {
+        float: none;
+        padding-bottom: 20px;
+        margin-left: 15px;
+    }
+
+    header.sticky i {
+        color: black;
+    }
+
+    .main_menu {
+        display: none;
+    }
+
+    .main_menu li {
+        float: none;
+        border-bottom: 1px solid #252525;
+        padding: 15px 0;
+    }
+
+    .icon_box {
+        position: absolute;
+        top: 36px;
+        right: 30px;
     }
     
     #main_box {
@@ -1204,14 +1205,14 @@ header.sticky nav ul li a {
     
     #main_box img {
         width: 100%;
-        height: 100%;
+        height: 50%;
         position: absolute;
     }
     
     .main_text_box {
         position: absolute;
         color: #fff;
-        top: 33%;
+        top: 10%;
         left: 10%;
         display: flex;
         flex-direction: column;
@@ -1220,7 +1221,7 @@ header.sticky nav ul li a {
     }
     
     .main_text_box h2 {
-        font-size: 50px;
+        font-size: 36px;
     }
     
     .main_text_box small {
@@ -1438,6 +1439,9 @@ header.sticky nav ul li a {
         top: 65.5%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0);
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: wrap;
     }
     
     .car_color_box {
@@ -1448,7 +1452,7 @@ header.sticky nav ul li a {
     }
     
     .car_color_pick {
-        width: 360px;
+        width: 33%;
         height: 19px;
         text-align: center;
         line-height: 18px;
@@ -1575,7 +1579,7 @@ header.sticky nav ul li a {
     
     .footer_top_box {
         width: 100%;
-        height: 620px;
+        height: 82vh;
         margin: 0 auto;
         position: relative;
         border-bottom: 2px solid #666;
@@ -1632,12 +1636,12 @@ header.sticky nav ul li a {
     }
     
     .footer_top_comp_box {
-        width: 400px;
+        width: 100%;
         height: 70px;
         border-top: 1px solid rgb(211, 211, 211);
         position: absolute;
         bottom: 0;
-        margin: 0 10px;
+        margin: 0;
     }
     
     .footer_top_comp_box small {
