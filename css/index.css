@@ -45,7 +45,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
 }
 
@@ -263,7 +263,7 @@ header.sticky nav ul li a {
 
 /* 첫번째 */
 .main_info_box {
-    width: 1500px;
+    width: 79vw;
     height: 1900px;
     margin: 200px auto;
 }
@@ -343,7 +343,7 @@ header.sticky nav ul li a {
 }
 
 .info_box2_left_box {
-    width: 550px;
+    width: 29vw;
     height: 900px;
     position: absolute;
     left: 0;
@@ -390,7 +390,7 @@ header.sticky nav ul li a {
 }
 
 .info_box2_right_box {
-    width: 800px;
+    width: 42vw;
     height: 565px;
     position: absolute;
     right: 0;
@@ -434,7 +434,7 @@ header.sticky nav ul li a {
 /* 메인 슬라이드 안 텍스트 */
 
 .main_text_box {
-    width: 1200px;
+    width: 80vw;
     height: 600px;
     position: absolute;
     top: 50%;
@@ -474,7 +474,7 @@ header.sticky nav ul li a {
 
 /* 아이템 박스 */
 .content_item_box {
-    width: 1500px;
+    width: 81vw;
     height: 870px;
     margin: 0 auto;
     margin-bottom: 200px;
@@ -486,7 +486,7 @@ header.sticky nav ul li a {
 }
 
 .item_box_name p {
-    width: 1500px;
+    width: 80vw;
     margin: 0 auto;
     font-size: 48px;
     top: 0;
@@ -496,7 +496,7 @@ header.sticky nav ul li a {
 }
 
 .item_box {
-    width: 25vw;
+    width: 30%;
     height: 35vh;
     border-radius: 10px;
     position: relative;
