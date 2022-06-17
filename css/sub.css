@@ -588,6 +588,9 @@ header.sticky nav ul li a {
 
 @media screen and (max-width:768px) {
 /* 헤더 시작 */
+body {
+    padding: 0 10px;
+}
 
 .container {
     width: 100%;
