@@ -20,7 +20,8 @@ $(document).ready(function() {
 
     if (window.matchMedia("(max-width: 768px)").matches) {
         $('.inner iframe').attr({"width" : "550", "height" : "275"});
-    } else if (window.matchMedia("(max-width: 480px)").matches) {
-        $('.inner iframe').attr({"width" : "300", "height" : "175"});
+    }
+    if (window.matchMedia("(max-width: 480px)").matches) {
+        $('.inner iframe').attr({"width" : "350", "height" : "235"});
     }
 });//ready(function()
